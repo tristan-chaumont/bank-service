@@ -31,10 +31,6 @@ public class Account implements Serializable {
     @Column(name = "balance")
     private double balance;
 
-    public void debitAccount(double amount) {
-        balance -= amount;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
