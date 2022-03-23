@@ -28,7 +28,7 @@ J'utilise une classe `BankResponse` pour transférer les données d'un service �
 ## Données de test
 
 Des données de test sont pré-insérées dans la base pour pouvoir utiliser le service, ici ce sont deux comptes :
-| | Compte 1 | Compte 2 |
+| | Account 1 | Account 2 |
 | --- | --- | --- |
 | `account_id` | '1' | '2' |
 | `client_name` | 'Chaumont' | 'Noirot' |
