@@ -11,6 +11,8 @@ Le service est composé d'une unique entité `Account` contenant les attributs :
 
 Vu que les id des données dans `Traveler` ne correspondent pas aux id des données dans `Account`, j'utilise le nom de l'utilisateur pour communiquer entre les deux services.
 
+Initialement, pour l'autorisation de paiement, je voulais également débiter le compte bancaire de l'utilisateur avec une requête POST. Cependant, j'ai rencontré des problèmes pour faire cet appel depuis le service Reservation avec la méthode `patchForObject()` de la classe `RestTemplate`. Je me suis donc malheureusement contenté de vérifier si le compte avait les fonds suffisants pour être débité avec une requête GET.
+
 ## Database
 
 Contrairement au service Reservation, je n'ai pas mis en place de Docker avec une base PostgreSQL, tout se fait via une base H2.
